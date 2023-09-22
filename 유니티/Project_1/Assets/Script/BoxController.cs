@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BoxController : MonoBehaviour
@@ -8,8 +9,9 @@ public class BoxController : MonoBehaviour
     {
         if (collision.transform.tag == "Wall")
         {
-            transform.Translate(-1, 0, 0);
-            print(collision.transform.tag);
+            GameObject.Find("Player").GetComponent<Controller2D>().wallFlag = true;
+            print("true");
         }
-    }
+
+     }
 }

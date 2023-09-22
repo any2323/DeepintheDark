@@ -9,6 +9,7 @@ public class Controller2D : RaycastController
     float maxDescendAngle = 80;
 
     public CollisionInfo collisions;
+    public bool wallFlag = false;
 
     [HideInInspector]
     public Vector2 playerInput = Vector2.zero; //제거 금지(카메라 팔로우에 사용)
@@ -69,14 +70,17 @@ public class Controller2D : RaycastController
             {
                 if(hit.collider.tag == "Box")
                 {
-                    if (directionX == 1)
+                    if (!wallFlag)
                     {
-                        hit.collider.transform.Translate(0.1f, 0, 0);
-                    }
-                    else if(directionX == -1)
-                    {
-                        hit.collider.transform.Translate(-0.1f, 0, 0);
-                    }
+                        if (directionX == 1)
+                        {
+                            hit.collider.transform.Translate(0.1f, 0, 0);
+                        }
+                        else if (directionX == -1)
+                        {
+                            hit.collider.transform.Translate(-0.1f, 0, 0);
+                        }
+                    }                    
                 }
 
                 if (hit.distance == 0)
