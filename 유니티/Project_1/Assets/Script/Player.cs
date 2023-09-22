@@ -5,9 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Controller2D))]
 public class Player : MonoBehaviour
 {
-
+    public bool DoubleJump = false;
     public float jumpHeight = 4;
     public float timeToJumpApex = .4f;
+    int jumpCount = 0;
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
     float moveSpeed = 6;
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour
 
     Controller2D controller;
 
+    Vector2 directionalInput;
+
     void Start()
     {
         controller = GetComponent<Controller2D>();
@@ -29,24 +32,45 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        float targetVelocityX = input.x * moveSpeed;
-        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrounded : accelerationTimeAirborne);
-
+        CalculateVelocity();
+        controller.Move(velocity * Time.deltaTime);
 
         if (controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
+            if(controller.collisions.below && DoubleJump)
+            {
+                jumpCount = 0;
+            }
         }
+    }
 
+    public void SetDirectinalInput(Vector2 input)
+    {
+        directionalInput = input;
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
+    public void OnJumpDown()
+    {
+        if (controller.collisions.below)
         {
-                velocity.y = jumpVelocity;
+            velocity.y = jumpVelocity;
         }
 
+        if (DoubleJump)
+        {
+            if (!controller.collisions.below && (jumpCount <1))
+            {
+                velocity.y = jumpVelocity;
+                jumpCount++;
+            }
+        }
+    }
+
+    void CalculateVelocity()
+    {
+        float targetVelocityX = directionalInput.x * moveSpeed;
+        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrounded : accelerationTimeAirborne);
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
     }
 }
