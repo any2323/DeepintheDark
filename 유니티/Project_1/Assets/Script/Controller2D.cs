@@ -8,6 +8,7 @@ public class Controller2D : RaycastController
     float maxClimbAngle = 80;
     float maxDescendAngle = 80;
 
+    public Animator ani;
     public CollisionInfo collisions;
     public bool wallFlag = false;
 
@@ -18,6 +19,7 @@ public class Controller2D : RaycastController
     {
         base.Start();
         collisions.faceDir = 1;
+        ani = GetComponent<Animator>();
     }
     public void Move(Vector2 moveAmount, bool standingOnPlatform = false)
     {
@@ -68,8 +70,9 @@ public class Controller2D : RaycastController
 
             if (hit)
             {
-                if(hit.collider.tag == "Box")
+                if (hit.collider.tag == "Box")
                 {
+                    ani.SetBool("Push", true);
                     if (!wallFlag)
                     {
                         if (directionX == 1)
@@ -80,8 +83,10 @@ public class Controller2D : RaycastController
                         {
                             hit.collider.transform.Translate(-0.1f, 0, 0);
                         }
-                    }                    
+                    }
+
                 }
+                
 
                 if (hit.distance == 0)
                 {

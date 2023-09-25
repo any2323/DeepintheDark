@@ -10,8 +10,6 @@ public class BoxController : MonoBehaviour
         if (collision.transform.tag == "Wall")
         {
             GameObject.Find("Player").GetComponent<Controller2D>().wallFlag = true;
-            print("true");
         }
-
      }
 }
