@@ -59,16 +59,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Mini_1\PointControl.cs" />
-    <Compile Include="Assets\Script\BoxController.cs" />
-    <Compile Include="Assets\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Script\Player+Base\RaycastController.cs" />
     <Compile Include="Assets\Script\Mini_1\FallingPoint.cs" />
-    <Compile Include="Assets\Script\PlayerInput.cs" />
-    <Compile Include="Assets\Script\Mini_2\Lava.cs" />
+    <Compile Include="Assets\Script\Player+Base\Controller2D.cs" />
+    <Compile Include="Assets\Script\Player+Base\PlayerInput.cs" />
+    <Compile Include="Assets\Script\Mini_2\Exit.cs" />
+    <Compile Include="Assets\Script\Mini_2\risingLava.cs" />
+    <Compile Include="Assets\Script\Player+Base\BoxAni.cs" />
+    <Compile Include="Assets\Script\Player+Base\PlatformController.cs" />
+    <Compile Include="Assets\Script\Player+Base\Player.cs" />
+    <Compile Include="Assets\Script\Player+Base\CameraFollow.cs" />
     <Compile Include="Assets\Script\Mini_1\FallingPoint_GameDirector.cs" />
-    <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\PlatformController.cs" />
-    <Compile Include="Assets\Script\RaycastController.cs" />
-    <Compile Include="Assets\Script\Controller2D.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

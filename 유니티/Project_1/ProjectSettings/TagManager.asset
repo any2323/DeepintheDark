@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Through
   - Box
-  - Wall
+  - Lava
   layers:
   - Default
   - TransparentFX

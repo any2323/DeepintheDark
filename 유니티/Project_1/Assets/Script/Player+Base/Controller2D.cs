@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Controller2D : RaycastController
 {
-    //bool wallFlag = false;
     float maxClimbAngle = 80;
     float maxDescendAngle = 80;
 
-    public Animator ani;
     public CollisionInfo collisions;
-    public bool wallFlag = false;
 
     [HideInInspector]
     public Vector2 playerInput = Vector2.zero; //제거 금지(카메라 팔로우에 사용)
@@ -19,7 +16,6 @@ public class Controller2D : RaycastController
     {
         base.Start();
         collisions.faceDir = 1;
-        ani = GetComponent<Animator>();
     }
     public void Move(Vector2 moveAmount, bool standingOnPlatform = false)
     {
@@ -70,24 +66,6 @@ public class Controller2D : RaycastController
 
             if (hit)
             {
-               /* if (hit.collider.tag == "Box")
-                {
-                    ani.SetBool("Push", true);
-                    if (!wallFlag)
-                    {
-                        if (directionX == 1)
-                        {
-                            hit.collider.transform.Translate(0.1f, 0, 0);
-                        }
-                        else if (directionX == -1)
-                        {
-                            hit.collider.transform.Translate(-0.1f, 0, 0);
-                        }
-                    }
-
-                }*/
-                
-
                 if (hit.distance == 0)
                 {
                     continue;
@@ -228,8 +206,6 @@ public class Controller2D : RaycastController
             }
         }
     }
-
-
 
     public struct CollisionInfo
     {

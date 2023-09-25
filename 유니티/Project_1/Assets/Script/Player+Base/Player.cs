@@ -19,12 +19,14 @@ public class Player : MonoBehaviour
     float velocityXSmoothing;
 
     Controller2D controller;
+    Animator ani;
 
     Vector2 directionalInput;
 
     void Start()
     {
         controller = GetComponent<Controller2D>();
+        ani = GetComponent<Animator>();
 
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
@@ -61,6 +63,7 @@ public class Player : MonoBehaviour
         {
             if (!controller.collisions.below && (jumpCount <1))
             {
+                ani.SetTrigger("Double Jump");
                 velocity.y = jumpVelocity;
                 jumpCount++;
             }
