@@ -58,9 +58,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Mini_1\PointControl.cs" />
     <Compile Include="Assets\Script\BoxController.cs" />
     <Compile Include="Assets\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Script\Mini_1\FallingPoint.cs" />
     <Compile Include="Assets\Script\PlayerInput.cs" />
+    <Compile Include="Assets\Script\Mini_2\Lava.cs" />
+    <Compile Include="Assets\Script\Mini_1\FallingPoint_GameDirector.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\PlatformController.cs" />
     <Compile Include="Assets\Script\RaycastController.cs" />
