@@ -70,7 +70,7 @@ public class Controller2D : RaycastController
 
             if (hit)
             {
-                if (hit.collider.tag == "Box")
+               /* if (hit.collider.tag == "Box")
                 {
                     ani.SetBool("Push", true);
                     if (!wallFlag)
@@ -85,7 +85,7 @@ public class Controller2D : RaycastController
                         }
                     }
 
-                }
+                }*/
                 
 
                 if (hit.distance == 0)
