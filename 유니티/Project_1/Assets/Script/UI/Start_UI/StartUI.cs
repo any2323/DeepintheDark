@@ -9,7 +9,7 @@ public class StartUI : MonoBehaviour
 
     public void OnStartClick()
     {
-        print("다음으로 넘어간다");
+        print("레벨을 먼저 보여준다");
     }
 
     public void OnCrewClick()
@@ -26,4 +26,8 @@ public class StartUI : MonoBehaviour
             crew.SetActive(crewInformation);
         }
     }
+
+    public void OnSettingClick()
+    {
+        print("setting을 넘어간다");    }
 }

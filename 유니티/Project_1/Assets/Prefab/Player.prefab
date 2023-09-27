@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 3956900615367906310}
   - component: {fileID: 5180229714668757564}
   - component: {fileID: 5094320177274286721}
+  - component: {fileID: 3689593593544828369}
   - component: {fileID: 236718968133184562}
   m_Layer: 6
   m_Name: Player
@@ -313,8 +314,6 @@ MonoBehaviour:
   horizontalRaySpacing: 0
   verticalRaySpacing: 0
   collider: {fileID: 0}
-  ani: {fileID: 0}
-  wallFlag: 0
   playerInput: {x: 0, y: 0}
 --- !u!114 &5180229714668757564
 MonoBehaviour:
@@ -345,6 +344,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ani: {fileID: 0}
   rend: {fileID: 0}
+--- !u!114 &3689593593544828369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7415324779374336257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2a785a95b29dd42a0b582bca5500dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ani: {fileID: 0}
 --- !u!95 &236718968133184562
 Animator:
   serializedVersion: 5
