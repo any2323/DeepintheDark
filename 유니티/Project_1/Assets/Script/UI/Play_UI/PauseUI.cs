@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseUI : MonoBehaviour
 {
@@ -102,16 +103,18 @@ public class PauseUI : MonoBehaviour
 
     public void OnExit_Yes_Button()
     {
-        print("나갔습니다.");
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Test_FirstScreen");
     }
 
     public void OnRefresh_Yes_Button()
     {
-        print("새로고침");
         if (Flag.RefreshFlag)
         {
             Flag.RefreshFlag = false;
             Refresh.SetActive(Flag.RefreshFlag);
+            Time.timeScale = 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
