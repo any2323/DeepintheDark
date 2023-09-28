@@ -34,11 +34,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0)
+            return;
+
         CalculateVelocity();
         controller.Move(velocity * Time.deltaTime);
  
-        
-
         if (controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
