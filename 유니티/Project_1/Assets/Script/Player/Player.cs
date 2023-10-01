@@ -37,6 +37,12 @@ public class Player : MonoBehaviour
         if (Time.timeScale == 0)
             return;
 
+        if(gravity != -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2))
+        {
+            gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
+            jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
+        }
+
         CalculateVelocity();
         controller.Move(velocity * Time.deltaTime);
  

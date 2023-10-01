@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class risingLava : MonoBehaviour
 {
-    public int Speed = 1;
+    public float Speed = 1;
     void Update()
     {
         transform.Translate(0, (0.001f*Speed), 0);
@@ -14,7 +15,7 @@ public class risingLava : MonoBehaviour
     {
         if(collision.transform.tag == "Player")
         {
-            print("End");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
