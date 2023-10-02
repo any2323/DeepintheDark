@@ -7,6 +7,7 @@ public class StageMenu : MonoBehaviour
 {
     public Button[] buttons;
     public GameObject stageButtons;
+    [SerializeField] Animator transtionAnim;
     private void Awake()
     {
         ButtonsToAraay();
@@ -23,7 +24,15 @@ public class StageMenu : MonoBehaviour
     public void OpenStage(int StageId)
     {
         string stageName = "Stage-" + StageId;
+        StartCoroutine(ChangAni(stageName));
+    }
+
+    IEnumerator ChangAni(string stageName)
+    {
+        transtionAnim.SetTrigger("End");
+        yield return new WaitForSeconds(0.05f);
         SceneManager.LoadScene(stageName);
+        transtionAnim.SetTrigger("Start");
     }
 
     void ButtonsToAraay()

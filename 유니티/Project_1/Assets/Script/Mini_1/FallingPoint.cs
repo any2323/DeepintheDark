@@ -8,19 +8,23 @@ public class FallingPoint : MonoBehaviour
     public GameObject Minus;
     public Vector2 RightPoint;
     public Vector2 LeftPoint;
-    float span = 0.5f;
+    public float span = 0.2f;
     float time = 0;
 
     void Update()
     {
+        if (Time.timeScale == 0)
+            return;
+
         this.time += Time.deltaTime;
-        if(this.time > this.span)
+        if (this.time > this.span)
         {
             this.time = 0;
             GameObject Point = Instantiate(RandomPoint());
             float point = Random.Range(RightPoint.x, LeftPoint.x);
 
             Point.transform.position = new Vector3(point, RightPoint.y, 0);
+           
         }
     }
 
@@ -43,8 +47,6 @@ public class FallingPoint : MonoBehaviour
         Gizmos.DrawLine(LeftPoint, RightPoint);
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(new Vector3(LeftPoint.x, -14f, 0), new Vector3(RightPoint.x,-14f, 0));
+        Gizmos.DrawLine(new Vector3(LeftPoint.x, -14f, 0), new Vector3(RightPoint.x, -14f, 0));
     }
-
-
 }

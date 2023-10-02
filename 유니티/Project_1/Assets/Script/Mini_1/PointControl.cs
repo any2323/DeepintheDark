@@ -6,8 +6,8 @@ public class PointControl : MonoBehaviour
 {
     GameObject Player;
     GameObject director;
-     int minSpeed = 5;
-     int maxSpeed = 45;
+    public int minSpeed = 10;
+    public int maxSpeed = 100;
 
     void Start()
     {
@@ -18,9 +18,12 @@ public class PointControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int rad = Random.Range(minSpeed, maxSpeed);
+        if (Time.timeScale == 0)
+            return;
+
+        int radSpeed = Random.Range(minSpeed, maxSpeed);
         
-        transform.Translate(0, -1 * (rad * 0.001f), 0); //랜덤 주어지면 된다.
+        transform.Translate(0, -1 * (radSpeed * 0.0005f), 0); //랜덤 주어지면 된다.
 
         if (transform.position.y < -14f)
         {
@@ -32,7 +35,7 @@ public class PointControl : MonoBehaviour
         Vector2 dir = p1 - p2;
         float d = dir.magnitude;
 
-        if (d < 1.5f)
+        if (d < 1f)
         {
             if (gameObject.name == "Plus(Clone)")
             {
@@ -44,6 +47,4 @@ public class PointControl : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
 }
