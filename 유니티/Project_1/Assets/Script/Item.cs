@@ -6,6 +6,10 @@ public class Item : MonoBehaviour
 {
     Player player;
     bool lava = false;
+    bool life = false;
+    GameObject Life_1;
+    GameObject Life_2;
+    GameObject Life_3;
 
     void Start()
     {
@@ -14,6 +18,14 @@ public class Item : MonoBehaviour
         if (GameObject.Find("Lava"))
         {
             lava = true;
+        }
+
+        if (GameObject.Find("Life-1"))
+        {
+            life = true;
+            Life_1 = GameObject.Find("Life-1");
+            Life_2 = GameObject.Find("Life-2");
+            Life_3 = GameObject.Find("Life-3");
         }
     }
 
@@ -37,6 +49,19 @@ public class Item : MonoBehaviour
                 risingLava LavaSpeed = GameObject.Find("Lava").GetComponent<risingLava>();
                 LavaSpeed.Speed = 3.5f;
             }
+
+            if(life && transform.name == "Item_Heal")
+            {
+                if (!Life_3.activeSelf && Life_2.activeSelf && Life_1.activeSelf)
+                {
+                    Life_3.SetActive(true);
+                }
+                else if (!Life_3.activeSelf && !Life_2.activeSelf && Life_1.activeSelf)
+                {
+                    Life_2.SetActive(true);
+                }
+            }
+
             Destroy(gameObject);
         }
     }
