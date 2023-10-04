@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be669c644d7f99a47ae9b440de340065
+guid: fee61f894fe6c80419b702d44da370d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,85 +110,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_minibutton_0
+      name: BOX(1stage)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 64, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327a528011ab50544acbd2f3fa1f8934
+      internalID: 1758919197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX(1stage)_1
       rect:
         serializedVersion: 2
         x: 0
         y: 16
-        width: 16
+        width: 80
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 32, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df83e51c359f9e84d804860a9e9674d3
-      internalID: 1546154666
+      spriteID: 8775a485803f0b14d8766079bc552bfc
+      internalID: 1852094706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_minibutton_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96efff409b3d7a14aad47175ab185c12
-      internalID: -1568318620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_minibutton_2
+      name: BOX(1stage)_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 80
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a7051ac8e88a774986458e6152425d9
-      internalID: 948186553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_minibutton_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f21e0af2a3272e498d29fb5c76bc518
-      internalID: 124468654
+      spriteID: 8de301c9417c3ee4e8bee1fb72e1b1b3
+      internalID: 1180519917
       vertices: []
       indices: 
       edges: []
@@ -204,10 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_minibutton_0: 1546154666
-      UI_minibutton_1: -1568318620
-      UI_minibutton_2: 948186553
-      UI_minibutton_3: 124468654
+      BOX(1stage)_0: 1758919197
+      BOX(1stage)_1: 1852094706
+      BOX(1stage)_2: 1180519917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

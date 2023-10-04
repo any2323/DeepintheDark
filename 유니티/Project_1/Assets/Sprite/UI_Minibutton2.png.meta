@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 362139e7b2f836f438235c2106a9c2d0
+guid: f133db92f39064b48b952329fd18eaaa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 13
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,55 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_button2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 48
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d1d88be6c6892940be21c7d97baf7df
-      internalID: -1334614491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_button2_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 48
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 136fdf0ff8d28df4984e34b4fdb3fae3
-      internalID: -356991944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_button2_2
+      name: UI_Minibutton2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +124,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffbd2e309cd70a74a9b92491e74ca95e
-      internalID: -1347456074
+      spriteID: 764749039f2995d43ba3c9d1c988bdfa
+      internalID: -591853879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Minibutton2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfefc3d016692946a817624e415eebb
+      internalID: 475673685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Minibutton2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4284b429d7fbb44b006b6f1796f699
+      internalID: -1219541133
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_button2_0: -1334614491
-      UI_button2_1: -356991944
-      UI_button2_2: -1347456074
+      UI_Minibutton2_0: -591853879
+      UI_Minibutton2_1: 475673685
+      UI_Minibutton2_2: -1219541133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

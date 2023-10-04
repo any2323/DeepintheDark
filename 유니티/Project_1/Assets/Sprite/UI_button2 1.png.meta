@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96f6d48bd7ff1a747a5fd52028e5f3cc
+guid: cbb6227fea3bccc43acd5650d05d9682
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Entrance_0
+      name: UI_button2 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 64
-        height: 48
+        y: 32
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b3d02de1b0ae24e9d46681f67ca45c
-      internalID: -514718201
+      spriteID: 91011cd5699ad4b4795afb239c5abe4b
+      internalID: 459311721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Entrance_1
+      name: UI_button2 1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 64
-        height: 48
+        x: 0
+        y: 16
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f738fce715b963b4885d4b85fdcbeae2
-      internalID: -140458283
+      spriteID: 094b081b677c28343baad16417065c94
+      internalID: 413475912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Entrance_2
+      name: UI_button2 1_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 48
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,29 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 785563e8343d5ce4c9b0f6c3dee52561
-      internalID: 1494650297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Entrance_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28242b9575de26942b364131140374c6
-      internalID: -78828194
+      spriteID: 998fe5d788959664e90b961c9649ff49
+      internalID: -181556766
       vertices: []
       indices: 
       edges: []
@@ -204,10 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Entrance_0: -514718201
-      Entrance_1: -140458283
-      Entrance_2: 1494650297
-      Entrance_3: -78828194
+      UI_button2 1_0: 459311721
+      UI_button2 1_1: 413475912
+      UI_button2 1_2: -181556766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

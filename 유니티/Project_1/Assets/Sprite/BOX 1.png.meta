@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96f6d48bd7ff1a747a5fd52028e5f3cc
+guid: e4bc67c7b15636542a4d0976405fed9b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,85 +110,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Entrance_0
+      name: BOX 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 64
-        height: 48
+        y: 32
+        width: 80
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 64, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b3d02de1b0ae24e9d46681f67ca45c
-      internalID: -514718201
+      spriteID: 90bd096e5ed2220459a66b5de4361e69
+      internalID: -1612673713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Entrance_1
+      name: BOX 1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 64
-        height: 48
+        x: 0
+        y: 16
+        width: 80
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 32, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f738fce715b963b4885d4b85fdcbeae2
-      internalID: -140458283
+      spriteID: eb2a191f0fad03c46a07148f581de82e
+      internalID: -1342698979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Entrance_2
+      name: BOX 1_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 48
+        width: 80
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 785563e8343d5ce4c9b0f6c3dee52561
-      internalID: 1494650297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Entrance_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28242b9575de26942b364131140374c6
-      internalID: -78828194
+      spriteID: a6bd8991fbe7c5b48a2b10db539dd729
+      internalID: -2057598360
       vertices: []
       indices: 
       edges: []
@@ -204,10 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Entrance_0: -514718201
-      Entrance_1: -140458283
-      Entrance_2: 1494650297
-      Entrance_3: -78828194
+      BOX 1_0: -1612673713
+      BOX 1_1: -1342698979
+      BOX 1_2: -2057598360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
