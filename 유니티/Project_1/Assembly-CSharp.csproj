@@ -67,17 +67,19 @@
     <Compile Include="Assets\Script\Mini_2\Start.cs" />
     <Compile Include="Assets\Script\Common\PlayerPrefsDelete.cs" />
     <Compile Include="Assets\Script\Mini_2\risingLava.cs" />
-    <Compile Include="Assets\Script\Item.cs" />
     <Compile Include="Assets\Script\Player\RaycastController.cs" />
     <Compile Include="Assets\Script\UI\Start_UI\StageMenu.cs" />
     <Compile Include="Assets\Script\Mini_1\FallingPoint_GameDirector.cs" />
     <Compile Include="Assets\Script\Common\Exit.cs" />
     <Compile Include="Assets\Script\Player\BoxAni.cs" />
     <Compile Include="Assets\Script\UI\Play_UI\KeyDownUI.cs" />
+    <Compile Include="Assets\Script\Item\Information.cs" />
+    <Compile Include="Assets\Script\Common\Reset.cs" />
     <Compile Include="Assets\Script\Player\PlatformController.cs" />
     <Compile Include="Assets\Script\Box_Platform.cs" />
     <Compile Include="Assets\Script\Player\PlayerInput.cs" />
     <Compile Include="Assets\Script\UI\Play_UI\SliderUI.cs" />
+    <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Script\Player\Player.cs" />
   </ItemGroup>

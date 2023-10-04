@@ -10,10 +10,12 @@ public class Item : MonoBehaviour
     GameObject Life_1;
     GameObject Life_2;
     GameObject Life_3;
+    Vector3 pos;
 
     void Start()
     {
-         player = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.Find("Player").GetComponent<Player>();
+        pos = transform.position;
 
         if (GameObject.Find("Lava"))
         {
@@ -27,6 +29,13 @@ public class Item : MonoBehaviour
             Life_2 = GameObject.Find("Life-2");
             Life_3 = GameObject.Find("Life-3");
         }
+    }
+
+    private void Update()
+    {
+        Vector3 dirpos = pos;
+        dirpos.y = pos.y + 0.08f*  Mathf.Sin(Time.time* 5f);
+        transform.position = dirpos;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
