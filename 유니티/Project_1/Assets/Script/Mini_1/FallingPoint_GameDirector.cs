@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class FallingPoint_GameDirector : MonoBehaviour
 {
     private int score_data;
-    bool EndFlag= false;
+    bool EndFlag = false;
     public GameObject EndPoint;
     public GameObject Life_1;
     public GameObject Life_2;

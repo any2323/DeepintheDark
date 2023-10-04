@@ -37,10 +37,10 @@ public class PointControl : MonoBehaviour
 
         if (d < 1f)
         {
-            if (gameObject.name == "Plus(Clone)")
+            if (gameObject.name == "Point(Clone)")
             {
                 director.GetComponent<FallingPoint_GameDirector>().Up_Point();
-            }else if(gameObject.name == "Minus(Clone)")
+            }else if(gameObject.name == "Rockfall_1(Clone)" || gameObject.name == "Rockfall_2(Clone)" || gameObject.name == "Rockfall_3(Clone)")
             {
                 director.GetComponent<FallingPoint_GameDirector>().Down_Point();
             }

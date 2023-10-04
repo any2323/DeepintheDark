@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6627547032667972520}
   - component: {fileID: 4724312670235338252}
-  - component: {fileID: 4619141548101866571}
   - component: {fileID: 361993580516681940}
+  - component: {fileID: 6325187196645745557}
   m_Layer: 0
   m_Name: Item_JumpHeight
   m_TagString: Untagged
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.37169808, g: 1, b: 0.42956507, a: 1}
+  m_Sprite: {fileID: -493836237, guid: fe1497cc852e09e4689fb2c9e6819004, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,8 +86,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4619141548101866571
-CircleCollider2D:
+--- !u!114 &361993580516681940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508451779009069747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4820a487174894648b8ccb0e2a05bc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &6325187196645745557
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,18 +130,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &361993580516681940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4508451779009069747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4820a487174894648b8ccb0e2a05bc43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Offset: {x: -0.0030784607, y: 0}
+  m_Size: {x: 0.6306162, y: 1}
+  m_Direction: 0
