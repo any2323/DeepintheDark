@@ -13736,8 +13736,6 @@ MonoBehaviour:
   horizontalRaySpacing: 0
   verticalRaySpacing: 0
   collider: {fileID: 0}
-  ani: {fileID: 0}
-  wallFlag: 0
   playerInput: {x: 0, y: 0}
 --- !u!61 &1960919229
 BoxCollider2D:
