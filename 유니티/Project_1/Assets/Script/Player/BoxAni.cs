@@ -17,4 +17,12 @@ public class BoxAni : MonoBehaviour
             ani.SetBool("Push", true);
         }
     }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Box")
+        {
+            ani.SetBool("Push", false);
+        }
+    }
 }

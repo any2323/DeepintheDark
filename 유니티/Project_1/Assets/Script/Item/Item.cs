@@ -15,6 +15,7 @@ public class Item : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
+
         pos = transform.position;
 
         if (GameObject.Find("Lava"))
@@ -53,11 +54,6 @@ public class Item : MonoBehaviour
                 player.timeToJumpApex = 0.25f;
             }
 
-            if(lava && transform.name == "Item_Lava")
-            {
-                risingLava LavaSpeed = GameObject.Find("Lava").GetComponent<risingLava>();
-                LavaSpeed.Speed = 3.5f;
-            }
 
             if(life && transform.name == "Item_Heal")
             {
@@ -71,7 +67,15 @@ public class Item : MonoBehaviour
                 }
             }
 
+            if(lava && transform.name == "Item_Lava")
+            {
+                risingLava LavaSpeed = GameObject.Find("Lava").GetComponent<risingLava>();
+                LavaSpeed.Speed = 3.5f;
+            }
+            
             Destroy(gameObject);
         }
     }
+
+
 }

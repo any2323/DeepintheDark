@@ -8,7 +8,8 @@ TagManager:
   - Box
   - Lava
   - Platform
-  - Wall
+  - Music
+  - Item
   layers:
   - Default
   - TransparentFX

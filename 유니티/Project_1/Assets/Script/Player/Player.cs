@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
 
     Controller2D controller;
     Animator ani;
+    AudioSource source;
+    AudioClip jumpClip;
 
     Vector2 directionalInput;
 
@@ -27,6 +29,9 @@ public class Player : MonoBehaviour
     {
         controller = GetComponent<Controller2D>();
         ani = GetComponent<Animator>();
+
+        source = GetComponent<AudioSource>();
+        jumpClip = Resources.Load<AudioClip>("Jump");
 
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
@@ -63,8 +68,10 @@ public class Player : MonoBehaviour
 
     public void OnJumpDown()
     {
+        source.clip = jumpClip;
         if (controller.collisions.below)
         {
+            source.Play();
             velocity.y = jumpVelocity;
         }
 
@@ -72,6 +79,7 @@ public class Player : MonoBehaviour
         {
             if (!controller.collisions.below && (jumpCount <1))
             {
+                source.Play();
                 ani.SetTrigger("Double Jump");
                 velocity.y = jumpVelocity;
                 jumpCount++;

@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent (typeof(Player))]
 public class PlayerInput : MonoBehaviour
 {
     Player player;
     public Animator ani;
+    AudioSource source;
+    
     public SpriteRenderer rend;
     void Start()
     {
+        source = GameObject.Find("WalkSound").GetComponent<AudioSource>();
         player = GetComponent<Player>();
         ani = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
@@ -25,16 +29,15 @@ public class PlayerInput : MonoBehaviour
         player.SetDirectinalInput (directionalInput);
 
         
-            if (directionalInput.x == 1)
-            {
-                rend.flipX = false;
-            }
+        if (directionalInput.x == 1)
+        {
+            rend.flipX = false;
+        }
 
-            if (directionalInput.x == -1)
-            {
-                rend.flipX = true;
-            }
-        
+        if (directionalInput.x == -1)
+        {
+            rend.flipX = true;
+        }
 
         if (directionalInput.x == 0)
         {
@@ -46,6 +49,13 @@ public class PlayerInput : MonoBehaviour
             ani.SetBool("Walk", true);
         }
 
+        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            source.Play();
+        }else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            source.Stop();
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
