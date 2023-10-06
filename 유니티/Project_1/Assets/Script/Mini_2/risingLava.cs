@@ -8,6 +8,10 @@ public class risingLava : MonoBehaviour
     public float Speed = 1;
     void Update()
     {
+        if(Time.timeScale == 0)
+        {
+            return;
+        }
         transform.Translate(0, (0.001f*Speed), 0);
     }
 

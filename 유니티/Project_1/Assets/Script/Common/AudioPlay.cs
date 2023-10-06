@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class AudioPlay : MonoBehaviour
 {
@@ -9,9 +10,17 @@ public class AudioPlay : MonoBehaviour
     public AudioMixer mixer;
     public AudioSource source;
     public float savedVolume;
+    private GameObject[] musics;
 
     private void Awake()
     {
+        musics = GameObject.FindGameObjectsWithTag("Music");
+
+        if(musics.Length >= 2)
+        {
+            Destroy(this.gameObject);
+        }
+
         source = GetComponent<AudioSource>();
         savedVolume = PlayerPrefs.GetFloat("Master", 0.75f);
         DontDestroyOnLoad(transform.gameObject);

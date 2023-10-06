@@ -551,6 +551,10 @@ PrefabInstance:
       propertyPath: exit
       value: 
       objectReference: {fileID: 2089920310}
+    - target: {fileID: 4040647112765771960, guid: d91c6c3277925974790abdef011bb826, type: 3}
+      propertyPath: transtionAnim
+      value: 
+      objectReference: {fileID: 518506803}
     - target: {fileID: 6013573719576762486, guid: d91c6c3277925974790abdef011bb826, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

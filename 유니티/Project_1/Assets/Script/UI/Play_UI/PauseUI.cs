@@ -14,7 +14,12 @@ public class PauseUI : MonoBehaviour
     public GameObject Pause;
     public GameObject _Exit;
     public GameObject Refresh;
+    AudioSource source;
 
+    private void Start()
+    {
+        source = GameObject.Find("MusicSource").GetComponent<AudioSource>();
+    }
     public void OnPauseButton()
     {
         Button RefreshButton = GameObject.Find("RefreshButton").GetComponent<Button>();
@@ -104,7 +109,9 @@ public class PauseUI : MonoBehaviour
     public void OnExit_Yes_Button()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Test_FirstScreen");
+        SceneManager.LoadScene("Main");
+        source.clip = Resources.Load<AudioClip>("12");
+        source.Play();
     }
 
     public void OnRefresh_Yes_Button()

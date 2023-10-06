@@ -27,7 +27,18 @@ public class FallingPoint_GameDirector : MonoBehaviour
     {
         score_data += 10;
         score.text = "Score : " + score_data;
-        if(score_data >= 100 && !EndFlag)
+        if (score_data >= 300 && !EndFlag)
+        {
+            EndFlag = true;
+            EndPoint.SetActive(true);
+        }
+    }
+
+    public void UpUp_Point()
+    {
+        score_data += 100;
+        score.text = "Score : " + score_data;
+        if (score_data >= 300 && !EndFlag)
         {
             EndFlag = true;
             EndPoint.SetActive(true);
@@ -46,6 +57,18 @@ public class FallingPoint_GameDirector : MonoBehaviour
         }else if(!Life_3.activeSelf && !Life_2.activeSelf && Life_1.activeSelf)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
+    public void Heal()
+    {
+        if (!Life_3.activeSelf && Life_2.activeSelf && Life_1.activeSelf)
+        {
+            Life_3.SetActive(true);
+        }
+        else if (!Life_3.activeSelf && !Life_2.activeSelf && Life_1.activeSelf)
+        {
+            Life_2.SetActive(true);
         }
     }
 }

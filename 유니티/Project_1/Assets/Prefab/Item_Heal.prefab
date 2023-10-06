@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8147844311469287259}
   - component: {fileID: 1293425311124822037}
   - component: {fileID: 6000369894703646508}
-  - component: {fileID: 3954841140377617769}
+  - component: {fileID: -4437192630491353895}
   m_Layer: 0
   m_Name: Item_Heal
   m_TagString: Item
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &3954841140377617769
+--- !u!114 &-4437192630491353895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,6 +130,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5041574703911562786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4820a487174894648b8ccb0e2a05bc43, type: 3}
+  m_Script: {fileID: 11500000, guid: 83c80ea500786cf4cb4608178ed2ee22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minSpeed: 1
+  maxSpeed: 50

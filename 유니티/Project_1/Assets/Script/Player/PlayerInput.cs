@@ -23,7 +23,14 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
         if (Time.timeScale == 0)
+        {
+            source.mute = true;
             return;
+        }
+        else
+        {
+            source.mute = false;
+        }
 
         Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         player.SetDirectinalInput (directionalInput);

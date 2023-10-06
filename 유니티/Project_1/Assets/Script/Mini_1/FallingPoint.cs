@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class FallingPoint : MonoBehaviour
 {
-    public GameObject Point;
+    public GameObject Point1;
+    public GameObject Point2;
+    public GameObject Item;
     public GameObject Rock1;
     public GameObject Rock2;
     public GameObject Rock3;
     public Vector2 RightPoint;
     public Vector2 LeftPoint;
+    public Vector2 FloorPoint;
     public float span = 0.2f;
     float time = 0;
 
+    private void Start()
+    {
+        FloorPoint.x = RightPoint.x;;
+    }
     void Update()
     {
         if (Time.timeScale == 0)
@@ -31,7 +38,7 @@ public class FallingPoint : MonoBehaviour
 
     GameObject RandomPoint()
     {
-        int random = Random.Range(0, 10);
+        int random = Random.Range(0, 20);
         switch (random)
         {
             case 0:
@@ -41,16 +48,21 @@ public class FallingPoint : MonoBehaviour
             case 2:
                 return Rock3;
             case 3:
+                return Point2;
             case 4:
+                return Item;
             case 5:
             case 6:
             case 7:
             case 8:
             case 9:
             case 10:
-                return Point;
+            case 11:
+            case 12:
+            case 13:
+                return Point1;
         }
-        return Point;
+        return Point1;
     }
 
     private void OnDrawGizmos()
@@ -59,6 +71,6 @@ public class FallingPoint : MonoBehaviour
         Gizmos.DrawLine(LeftPoint, RightPoint);
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(new Vector3(LeftPoint.x, -14f, 0), new Vector3(RightPoint.x, -14f, 0));
+        Gizmos.DrawLine(new Vector3(LeftPoint.x, FloorPoint.y, 0), new Vector3(RightPoint.x, FloorPoint.y, 0));
     }
 }

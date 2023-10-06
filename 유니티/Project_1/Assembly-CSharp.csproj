@@ -59,11 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Mini_1\PointControl.cs" />
-    <Compile Include="Assets\BoxSound.cs" />
     <Compile Include="Assets\Script\UI\Play_UI\PauseUI.cs" />
     <Compile Include="Assets\Script\Common\StageChange.cs" />
+    <Compile Include="Assets\Script\Common\BoxSound.cs" />
     <Compile Include="Assets\Script\Mini_1\FallingPoint.cs" />
     <Compile Include="Assets\Script\UI\Play_UI\ButtonFlag.cs" />
+    <Compile Include="Assets\Script\Common\Box_Platform.cs" />
     <Compile Include="Assets\Script\Player\Controller2D.cs" />
     <Compile Include="Assets\Script\Mini_2\Start.cs" />
     <Compile Include="Assets\Script\Common\PlayerPrefsDelete.cs" />
@@ -78,9 +79,9 @@
     <Compile Include="Assets\Script\Item\Information.cs" />
     <Compile Include="Assets\Script\Common\Reset.cs" />
     <Compile Include="Assets\Script\Player\PlatformController.cs" />
-    <Compile Include="Assets\Script\Box_Platform.cs" />
     <Compile Include="Assets\Script\Player\PlayerInput.cs" />
     <Compile Include="Assets\Script\UI\Play_UI\SliderUI.cs" />
+    <Compile Include="Assets\Script\Mini_1\MiniStart.cs" />
     <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Script\Player\Player.cs" />
