@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8cfba0211602aa44a7b548668818802
+guid: b43e46e117e83c64b8c0474c8c995b8f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,48 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ui_window2_0
+      name: othercave_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
-        width: 128
-        height: 144
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37c82212bdff0e547b20d63a9e45eb8f
-      internalID: -1912497722
+      spriteID: 0264a1fc94bb3084cbed8ea48da38828
+      internalID: 1712941709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: othercave_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 5}
+        - {x: 0, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4aad8d5ac0e7e4e9e0788663df1335
+      internalID: -2013337925
       vertices: []
       indices: 
       edges: []
@@ -141,7 +167,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ui_window2_0: -1912497722
+      othercave_0: 1712941709
+      othercave_1: -2013337925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
