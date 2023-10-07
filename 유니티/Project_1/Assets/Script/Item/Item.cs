@@ -44,7 +44,7 @@ public class Item : MonoBehaviour
             if(lava && transform.name == "Item_Lava")
             {
                 risingLava LavaSpeed = GameObject.Find("Lava").GetComponent<risingLava>();
-                LavaSpeed.Speed = 5f;
+                LavaSpeed.Speed += 1.5f;
             }
             
             Destroy(gameObject);
