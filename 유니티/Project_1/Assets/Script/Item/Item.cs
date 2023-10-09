@@ -7,11 +7,20 @@ public class Item : MonoBehaviour
     Player player;
     bool lava = false;
     Vector3 pos;
+    GameObject Open;
+    GameObject Close;
 
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
         pos = transform.position;
+
+        if (GameObject.Find("Item_Treasure"))
+        {
+            Open = GameObject.Find("Item_Treasure_Open");
+            Close = GameObject.Find("Item_Treasure_Close");
+            Open.SetActive(false);
+        }
     }
 
     private void Update()
@@ -20,6 +29,8 @@ public class Item : MonoBehaviour
         {
             lava = true;
         }
+
+        
 
         Vector3 dirpos = pos;
         dirpos.y = pos.y + 0.08f * Mathf.Sin(Time.time * 5f);
@@ -33,21 +44,29 @@ public class Item : MonoBehaviour
         {
             if(transform.name == "Item_DoubleJump") {
                 player.DoubleJump = true;
+                Destroy(gameObject);
             }
 
-            if(transform.name == "Item_JumpHeight")
+            if (transform.name == "Item_JumpHeight")
             {
                 player.jumpHeight = 2.5f;
                 player.timeToJumpApex = 0.25f;
+                Destroy(gameObject);
             }
 
-            if(lava && transform.name == "Item_Lava")
+            if (lava && transform.name == "Item_Lava")
             {
                 risingLava LavaSpeed = GameObject.Find("Lava").GetComponent<risingLava>();
                 LavaSpeed.Speed += 1.5f;
+                Destroy(gameObject);
             }
-            
-            Destroy(gameObject);
+
+            if(transform.name == "Item_Treasure")
+            {
+                Open.SetActive(true);
+                Close.SetActive(false);
+            }
+
         }
     }
 

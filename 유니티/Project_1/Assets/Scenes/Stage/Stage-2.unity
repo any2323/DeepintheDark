@@ -649,7 +649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6343591998243683750, guid: e4c4dda3ba106064782736eb45a3fe1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15765561
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 6343591998243683750, guid: e4c4dda3ba106064782736eb45a3fe1d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20243,10 +20243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 859056727}
   verticalOffset: 1
-  lookAheadDstX: 4
+  lookAheadDstX: 2
   lookSmoothTimeX: 0.1
   verticalSmoothTime: 0.3
-  focusAreaSize: {x: 3, y: 3}
+  focusAreaSize: {x: 2, y: 2}
 --- !u!81 &1787532867
 AudioListener:
   m_ObjectHideFlags: 0
@@ -20315,7 +20315,7 @@ Transform:
   m_GameObject: {fileID: 1787532865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -0.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
