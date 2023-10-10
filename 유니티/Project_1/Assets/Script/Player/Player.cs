@@ -50,7 +50,8 @@ public class Player : MonoBehaviour
 
         CalculateVelocity();
         controller.Move(velocity * Time.deltaTime);
- 
+
+
         if (controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
@@ -73,16 +74,25 @@ public class Player : MonoBehaviour
         {
             source.Play();
             velocity.y = jumpVelocity;
+            jumpCount++;
         }
 
         if (DoubleJump)
         {
-            if (!controller.collisions.below && (jumpCount <1))
+            if (!controller.collisions.below && (jumpCount <2))
             {
-                source.Play();
-                ani.SetTrigger("Double Jump");
-                velocity.y = jumpVelocity;
-                jumpCount++;
+                if (jumpCount == 0)
+                {
+                    return;
+                }
+                else
+                {
+                    source.Play();
+                    ani.SetTrigger("Double Jump");
+                    velocity.y = jumpVelocity;
+                    jumpCount++;
+
+                }
             }
         }
     }

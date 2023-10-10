@@ -5,8 +5,6 @@ using UnityEngine;
 public class parallex : MonoBehaviour
 {
     Transform cam;
-    [SerializeField]
-    GameObject Player;
     Vector3 camStartPos;
     float distanceX;
     float distanceY;
