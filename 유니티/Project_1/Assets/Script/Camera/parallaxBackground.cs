@@ -32,7 +32,7 @@ public class parallex : MonoBehaviour
         for (int i = 0; i < backCount; i++)
         {
             backgrounds[i] = transform.GetChild(i).gameObject;
-            backgrounds[i].transform.position= new Vector3 (cam.position.x, cam.position.y, backgrounds[i].transform.position.z);
+            backgrounds[i].transform.position= new Vector3 (cam.position.x, cam.position.y +2, backgrounds[i].transform.position.z);
             mat[i] = backgrounds[i].GetComponent<Renderer>().material;
         }
 
@@ -66,12 +66,13 @@ public class parallex : MonoBehaviour
             if (backgrounds[i].GetComponent<BackGroundBool>().distanceY == false)
             {
                 mat[i].SetTextureOffset("_MainTex", new Vector2(distanceX, 0) * speed);
+                transform.position = new Vector3(cam.position.x, transform.position.y, 0);
             }
             else
             {
                 mat[i].SetTextureOffset("_MainTex", new Vector2(distanceX, distanceY) * speed);
+                transform.position = new Vector3(cam.position.x, cam.position.y, 0);
             }
-            transform.position = new Vector3(cam.position.x, cam.position.y, 0);
         }
     }
 }

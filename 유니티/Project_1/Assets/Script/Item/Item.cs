@@ -21,6 +21,13 @@ public class Item : MonoBehaviour
             Close = GameObject.Find("Item_Treasure_Close");
             Open.SetActive(false);
         }
+
+        if (GameObject.Find("Item_Key"))
+        {
+            Open = GameObject.Find("EndPoint1_Open");
+            Close = GameObject.Find("EndPoint1_Close");
+            Open.SetActive(false);
+        }
     }
 
     private void Update()
@@ -29,8 +36,6 @@ public class Item : MonoBehaviour
         {
             lava = true;
         }
-
-        
 
         Vector3 dirpos = pos;
         dirpos.y = pos.y + 0.08f * Mathf.Sin(Time.time * 5f);
@@ -61,12 +66,19 @@ public class Item : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            if(transform.name == "Item_Treasure")
+            if (transform.name == "Item_Treasure")
             {
+                transform.GetComponent<BoxCollider2D>().enabled = false;
                 Open.SetActive(true);
                 Close.SetActive(false);
             }
 
+            if(!Open.activeSelf && transform.name == "Item_Key")
+            {
+                Open.SetActive(true);
+                Close.SetActive(false);
+                Destroy(gameObject);
+            }
         }
     }
 

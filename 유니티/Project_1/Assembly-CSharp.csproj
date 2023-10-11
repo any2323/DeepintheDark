@@ -62,7 +62,7 @@
     <Compile Include="Assets\Script\UI\Play_UI\PauseUI.cs" />
     <Compile Include="Assets\Script\Common\StageChange.cs" />
     <Compile Include="Assets\Script\Camera\BackGroundBool.cs" />
-    <Compile Include="Assets\Script\Common\BoxSound.cs" />
+    <Compile Include="Assets\Script\Common\ItemSound.cs" />
     <Compile Include="Assets\Script\Mini_1\FallingPoint.cs" />
     <Compile Include="Assets\Script\UI\Play_UI\ButtonFlag.cs" />
     <Compile Include="Assets\Script\Common\Box_Platform.cs" />
