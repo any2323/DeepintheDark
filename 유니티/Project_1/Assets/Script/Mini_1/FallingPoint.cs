@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FallingPoint : MonoBehaviour
 {
@@ -38,31 +39,58 @@ public class FallingPoint : MonoBehaviour
 
     GameObject RandomPoint()
     {
-        int random = Random.Range(0, 20);
-        switch (random)
+
+        if (SceneManager.GetActiveScene().name == "Stage-9")
         {
-            case 0:
-                return Rock1;
-            case 1:
-                return Rock2;
-            case 2:
-                return Rock3;
-            case 3:
-                return Point2;
-            case 4:
-                return Item;
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-            case 11:
-            case 12:
-            case 13:
-                return Point1;
+            int random = Random.Range(0, 11);
+            switch (random)
+            {
+                case 0:
+                    return Rock1;
+                case 1:
+                    return Rock2;
+                case 2:
+                    return Rock3;
+                case 3:
+                case 4:
+                    return Item;
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                    return Rock1;
+            }
         }
-        return Point1;
+        else
+        {
+            int random = Random.Range(0, 14);
+            switch (random)
+            {
+                case 0:
+                    return Rock1;
+                case 1:
+                    return Rock2;
+                case 2:
+                    return Rock3;
+                case 3:
+                    return Point2;
+                case 4:
+                    return Item;
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                    return Point1;
+            }
+        }
+        return null;
     }
 
     private void OnDrawGizmos()

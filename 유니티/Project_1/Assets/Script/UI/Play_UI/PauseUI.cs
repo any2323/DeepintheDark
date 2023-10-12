@@ -110,7 +110,7 @@ public class PauseUI : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Main");
-        source.clip = Resources.Load<AudioClip>("12");
+        source.clip = Resources.Load<AudioClip>("Main");
         source.Play();
     }
 

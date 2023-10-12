@@ -162,7 +162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71, y: 63}
+  m_AnchoredPosition: {x: -34, y: 20}
   m_SizeDelta: {x: 640.1276, y: 459.4718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &47086586
@@ -185,9 +185,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Company\n GONGGAMMORE CONTENTS INC. (MYME)\n\n-Crew\nDev : Kyle\tGD +
-    Art : Ember\n\n-Music\n1.  Comp. : nyorunyouta (https://youtu.be/wWkzWn85bQg?si=lJQv7viRg6rkIRrJ)\n\n2.
-    Comp. : nojisuma\n(https://pixabay.com/ko/music/the-last-drop-15684/)\n(https://pixabay.com/ko/music/the-last-drop-15684/)\n\n-Font\nCopyright
+  m_text: "\u25CB Company\n GONGGAMMORE CONTENTS INC. (MYME)\n\u25CB Crew\nDev :
+    Kyle\tGD + Art : Ember\n\u25CB Music\n1. Comp. : 3xBlast\n(https://opengameart.org/content/happy-synths-loop-with-slight-christmas-feeling)\n2.
+    Comp. : nyorunyouta (https://youtu.be/wWkzWn85bQg?si=lJQv7viRg6rkIRrJ)\n3. Comp.
+    : nojisuma\n(https://pixabay.com/ko/music/the-last-drop-15684/)\n(https://pixabay.com/ko/music/the-last-drop-15684/)\n\u25CBFont\nCopyright
     \xA9 2017-2022, Eunbin Jeong\n(Dalgona.) <project-neodgm@dalgona.dev>\r\nwith
     reserved font name \"Neo\uB465\uADFC\uBAA8 Pro\" and \"NeoDunggeunmo Pro\"."
   m_isRightToLeft: 0
@@ -252,7 +253,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -59.121582, y: 0, z: -195.40039, w: -167.64133}
+  m_margin: {x: -59.121582, y: 0, z: -138.0935, w: -102.59027}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1917,7 +1918,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8984400123099056248, guid: b0675bc79e1803f4abb5bdec2ec84be4, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 1dbd5dc3f79fb374e84bc2910dd715ec, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4b8e806251ae9e9408de3fdae4eb3893, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

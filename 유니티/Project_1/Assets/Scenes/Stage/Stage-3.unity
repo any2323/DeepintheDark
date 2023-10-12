@@ -27514,6 +27514,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1779889584}
     m_Modifications:
+    - target: {fileID: 4493191449475949498, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
+      propertyPath: m_text
+      value: "\uC77C\uB2E8 \uB5A8\uC5B4\uC838 \u314B\u314B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493191449475949498, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 872e88596d217a742be232556ee31bd8, type: 2}
+    - target: {fileID: 4493191449475949498, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5788523379686046331, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       propertyPath: m_Name
       value: information

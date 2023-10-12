@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class parallex : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class parallex : MonoBehaviour
     Vector3 camStartPos;
     float distanceX;
     float distanceY;
+    Transform PlayerPos;
 
     GameObject[] backgrounds;
     Material[] mat;
@@ -22,6 +24,7 @@ public class parallex : MonoBehaviour
     void Start()
     {
         cam = Camera.main.transform;
+        PlayerPos = GameObject.Find("Player").transform;
         camStartPos = cam.position;
 
         int backCount = transform.childCount;
@@ -32,7 +35,6 @@ public class parallex : MonoBehaviour
         for (int i = 0; i < backCount; i++)
         {
             backgrounds[i] = transform.GetChild(i).gameObject;
-            backgrounds[i].transform.position= new Vector3 (cam.position.x, cam.position.y +2, backgrounds[i].transform.position.z);
             mat[i] = backgrounds[i].GetComponent<Renderer>().material;
         }
 

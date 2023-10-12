@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PointControl : MonoBehaviour
 {
@@ -24,8 +25,15 @@ public class PointControl : MonoBehaviour
             return;
 
         int radSpeed = Random.Range(minSpeed, maxSpeed);
-        
-        transform.Translate(0, -1 * (radSpeed * 0.0005f), 0); //랜덤 주어지면 된다.
+
+        if (SceneManager.GetActiveScene().name == "Stage-9")
+        {
+            transform.Translate(0, -1 * (radSpeed * Time.deltaTime * 0.8f), 0);
+        }
+        else
+        {
+            transform.Translate(0, -1 * (radSpeed * 0.0005f), 0); //랜덤 주어지면 된다.
+        }
 
         if (transform.position.y < FloorY.y)
         {
