@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Exit : MonoBehaviour
 {
     public GameObject exit;
-    [SerializeField] Animator transtionAnim;
+    GameObject EndImage;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Player")
         {
-            exit.GetComponent<StageChange>().NextStage();
+            if (SceneManager.GetActiveScene().name == "End")
+            {
+                GameObject.Find("KeyDownUI").GetComponent<KeyUI>().enabled = false;
+                Time.timeScale = 0;
+                EndImage = transform.GetChild(0).gameObject;
+                EndImage.SetActive(true);
+            }
+            else
+            {
+                exit.GetComponent<StageChange>().NextStage();
+            }
+
             for(int i = 0; i < 9; i++)
             {
                 if(SceneManager.GetActiveScene().name == "Stage-" + i)
@@ -24,6 +37,7 @@ public class Exit : MonoBehaviour
         }
     }
 
+
     void UnlockNewLevel()
     {
         if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
@@ -32,5 +46,11 @@ public class Exit : MonoBehaviour
             PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
             PlayerPrefs.Save();
         }
+    }
+
+    public void OnClickMain()
+    {
+        Time.timeScale = 1;
+        exit.GetComponent<StageChange>().NextStage();
     }
 }
