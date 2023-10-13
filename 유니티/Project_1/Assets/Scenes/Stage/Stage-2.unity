@@ -805,15 +805,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.0925596
+      value: 0.10588236
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.0925596
+      value: 0.10588236
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.9433962
+      value: 0.45882356
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_fontSizeBase
@@ -1478,10 +1478,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Be careful not to fall!
 
-        If you do, it will reset,
+        If you do, it will <#c91313>reset,</color>
 
         so
         proceed with caution!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493191449475949498, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5788523379686046331, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       propertyPath: m_Name
