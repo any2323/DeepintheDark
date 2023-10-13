@@ -22,7 +22,7 @@ public class Item : MonoBehaviour
             Open.SetActive(false);
         }
         
-        if (GameObject.Find("Item_Key"))
+        if (transform.name == "Item_Key")
         {
             Open = GameObject.Find("EndPoint1_Open");
             Close = GameObject.Find("EndPoint1_Close");

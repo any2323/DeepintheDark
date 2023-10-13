@@ -32,7 +32,7 @@ public class PointControl : MonoBehaviour
         }
         else
         {
-            transform.Translate(0, -1 * (radSpeed * 0.0005f), 0); //랜덤 주어지면 된다.
+            transform.Translate(0, -1 * (radSpeed * Time.deltaTime * 0.4f), 0); //랜덤 주어지면 된다.
         }
 
         if (transform.position.y < FloorY.y)
