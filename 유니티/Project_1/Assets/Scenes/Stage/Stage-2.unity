@@ -373,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
-      value: Puhst! Let's Push~!!
+      value: Push! Let's Push~!!
       objectReference: {fileID: 0}
     - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_IsActive
