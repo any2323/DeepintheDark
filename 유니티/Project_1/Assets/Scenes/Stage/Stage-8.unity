@@ -1611,9 +1611,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
-      value: 'Oops, it''s hot!
+      value: 'Oops, it''s too hot!
 
-        Let''s be careful not to fall into the lava!'
+        Let''s be careful not to fall into the
+        lava!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
@@ -2666,13 +2671,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2751508172428262750, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 87.500046
+      objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
-      value: My intuition tells me that there's an item if we cross over to the right!
+      value: "My intuition tells me \nthat there's an item if we cross over \nto
+        the right!"
       objectReference: {fileID: 0}
     - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937629928873315861, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
@@ -3071,7 +3085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6937629928873315861, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -48814,6 +48828,10 @@ PrefabInstance:
 
         I have a feeling that the
         exit is nearby!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name

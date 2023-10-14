@@ -28994,7 +28994,7 @@ PrefabInstance:
         and collect the coins!</color>\n\t: 10P\t\t: 100P\n\t: Life\t\t: +1 Life\n\t:
         -1 Life\t\t: -2 Life\n<size=1.3f>If you score <#c91313\r\n>300</color> points
         or more, <#c91313\r\n>a door will appear</size></color>\nIf your <#c91313\r\n>life
-        reaches 0, the game end.</color>\t"
+        reaches 0, the game is over.</color>\t"
       objectReference: {fileID: 0}
     - target: {fileID: 4493191449475949498, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       propertyPath: m_fontSize
