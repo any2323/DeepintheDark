@@ -375,9 +375,17 @@ PrefabInstance:
       propertyPath: m_text
       value: Puhst! Let's Push~!!
       objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
       value: CharacterVoiceover
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -701,12 +709,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2751508172428262750, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 89
+      objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
       value: 'Oh no! I can''t see the ground!
 
         Let''s be careful and proceed
         cautiously when crossing...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937629928873315861, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.0000153
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
@@ -18446,8 +18466,8 @@ Tilemap:
   - first: {x: 20, y: -21, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 34
-      m_TileSpriteIndex: 34
+      m_TileIndex: 19
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -25713,8 +25733,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: dbdf41b1bceb090478a5aa035ff3769a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 717d9d65e3e50554594bd169f310775c, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 21e7344524307b14490be974c96d1f45, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 02bec2e823de6834bbed2d4dd9918ab4, type: 2}
   - m_RefCount: 3
@@ -25743,7 +25763,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 05d8787073e1bd14087916a43f95b991, type: 2}
   - m_RefCount: 117
     m_Data: {fileID: 11400000, guid: 21cd7ccb69ae1f84589582f0fa2ca441, type: 2}
-  - m_RefCount: 120
+  - m_RefCount: 119
     m_Data: {fileID: 11400000, guid: 3e45d3caa6cf95f4dad05cfdef960de4, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -25778,8 +25798,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 853187925, guid: 0256cea55656a8e44b3e48c12698f9eb, type: 3}
   - m_RefCount: 14
     m_Data: {fileID: -1746035112, guid: 435e8d569b3cea0459228165b272192f, type: 3}
   - m_RefCount: 1
@@ -25814,7 +25834,7 @@ Tilemap:
     m_Data: {fileID: 1810795207, guid: 435e8d569b3cea0459228165b272192f, type: 3}
   - m_RefCount: 117
     m_Data: {fileID: -519787936, guid: 435e8d569b3cea0459228165b272192f, type: 3}
-  - m_RefCount: 120
+  - m_RefCount: 119
     m_Data: {fileID: -863075166, guid: 435e8d569b3cea0459228165b272192f, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 2332
@@ -26079,7 +26099,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
-      value: It's risky, but let's move forward and see what lies ahead.
+      value: 'It''s risky!!
+
+        Keep going and see what lies ahead.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
@@ -32200,6 +32226,10 @@ PrefabInstance:
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
       value: Let's keep on adventuring!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name

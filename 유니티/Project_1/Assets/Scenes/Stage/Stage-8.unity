@@ -3060,12 +3060,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2751508172428262750, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 90.00003
+      objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
-      value: 'IIt feels like we''re getting closer to the exit,
-
-        but why
-        do I feel uneasy?'
+      value: "It feels like we're getting closer \nto the exit,\nbut why do I feel
+        uneasy?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937629928873315861, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
