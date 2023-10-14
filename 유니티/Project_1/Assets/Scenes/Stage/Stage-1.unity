@@ -661,6 +661,10 @@ PrefabInstance:
       propertyPath: m_text
       value: I can jump one tile high!
       objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
       value: CharacterVoiceover2
@@ -776,7 +780,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7221120260841235764, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 635002485}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4674911258924333800, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
 --- !u!4 &549683220 stripped
 Transform:
@@ -1462,6 +1469,12 @@ PrefabInstance:
     - target: {fileID: 1649133454138371126, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_text
+      value: 'I should go for a walk today
+
+        the weather is so nice!'
       objectReference: {fileID: 0}
     - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_IsActive
@@ -19795,6 +19808,10 @@ PrefabInstance:
 
         Let''s go further inside and explore!'
       objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
       value: CharacterVoiceover4
@@ -20283,9 +20300,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3038399007264411898, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_text
-      value: 'There''s a hole?
+      value: 'Is there a hole?
 
         Let''s try pushing the rock!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368342990433460238, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8076871693733029975, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_Name
