@@ -57,7 +57,7 @@ public class StageChange : MonoBehaviour
         }
         else if(SceneManager.GetActiveScene().name == "Stage-9") //엔딩 화면
         {
-            source.clip = Resources.Load<AudioClip>("Main");
+            source.clip = Resources.Load<AudioClip>("End");
             source.Play();
         }
         else if (SceneManager.GetActiveScene().name == "End") // 메인화면
