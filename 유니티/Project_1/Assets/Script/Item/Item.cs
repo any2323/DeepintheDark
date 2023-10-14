@@ -88,6 +88,11 @@ public class Item : MonoBehaviour
             {
                 return;
             }
+
+            if(transform.name == "Item_Computer")
+            {
+                return;
+            }
         }
     }
 

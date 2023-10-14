@@ -5,6 +5,7 @@ using UnityEngine;
 public class EndLavaPoint : MonoBehaviour
 {
     public GameObject Lava;
+    public GameObject Background;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
