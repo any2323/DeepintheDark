@@ -19879,6 +19879,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenRock-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789465236618607355, guid: 01644bd6e832b1347aca0bb741bbc2d7, type: 3}
+      propertyPath: m_Size.y
+      value: 3.0402997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789465236618607355, guid: 01644bd6e832b1347aca0bb741bbc2d7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00000011920929
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20638,10 +20646,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7221120260841235764, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1561856472}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4674911258924333800, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
 --- !u!4 &8825032093108490435 stripped
 Transform:

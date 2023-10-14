@@ -53,4 +53,9 @@ public class Exit : MonoBehaviour
         Time.timeScale = 1;
         exit.GetComponent<StageChange>().NextStage();
     }
+
+    public void OnClickGameExit()
+    {
+        Application.Quit();
+    }
 }
