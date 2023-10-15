@@ -780,10 +780,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7221120260841235764, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 635002485}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4674911258924333800, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
 --- !u!4 &549683220 stripped
 Transform:
@@ -1216,10 +1213,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7221120260841235764, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1265262299}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4674911258924333800, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
 --- !u!1 &827093572
 GameObject:
@@ -2409,7 +2403,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 123aaca050ba2504395f9ddbe480a9a7, type: 2}
+  - {fileID: 2100000, guid: 07894aed3daaeae4d92e51318aa30cec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

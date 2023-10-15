@@ -1161,7 +1161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013573719576762486, guid: d91c6c3277925974790abdef011bb826, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.73
+      value: 11.55
       objectReference: {fileID: 0}
     - target: {fileID: 6013573719576762486, guid: d91c6c3277925974790abdef011bb826, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1724,10 +1724,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7221120260841235764, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 46313520}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4674911258924333800, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
 --- !u!4 &1415629385 stripped
 Transform:
@@ -1916,7 +1913,7 @@ Transform:
   m_GameObject: {fileID: 1484169280}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.81, y: 5.8, z: 0.15765561}
+  m_LocalPosition: {x: 30.99, y: 5.8, z: 0.15765561}
   m_LocalScale: {x: 1.1856, y: 4.3719, z: 1.1856}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2475,7 +2472,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 123aaca050ba2504395f9ddbe480a9a7, type: 2}
+  - {fileID: 2100000, guid: 07894aed3daaeae4d92e51318aa30cec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26324,7 +26321,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 07894aed3daaeae4d92e51318aa30cec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
