@@ -197,7 +197,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Text
+  m_text: '<#0019F4><size=2>MiniGame</color></size>
+
+    <#c91313>Avoid the Rising
+    Lava</color>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce73d88d0d1dbab4c9446d08fb408a9c, type: 2}
   m_sharedMaterial: {fileID: 6177285756685287550, guid: ce73d88d0d1dbab4c9446d08fb408a9c, type: 2}

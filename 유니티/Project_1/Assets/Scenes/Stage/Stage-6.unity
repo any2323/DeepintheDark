@@ -34543,8 +34543,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4493191449475949498, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       propertyPath: m_text
-      value: "For this stage, you need to climb up while avoiding the rising lava
-        from below!\n<#c91313 \r>If you touch the lava, it's game over.</color>\n"
+      value: "<#0019F4><size=2>MiniGame</color></size>\n<#c91313>Avoid the Rising
+        Lava</color>\n\nFor this stage, you need to climb up while \navoiding the
+        rising lava from below!\n<#c91313 \r>If you touch the lava, it's game over.</color>\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4674911258924333800, guid: 6e5b467cd7f9f5f4aae554c5df2f96ed, type: 3}
       propertyPath: m_IsActive
@@ -34662,8 +34663,8 @@ PrefabInstance:
 
         It can be difficult
 
-        But
-        the next stage is harder'
+        But the
+        next stage is harder'
       objectReference: {fileID: 0}
     - target: {fileID: 9008501092929057727, guid: c332f2eda31f4f94c9b8839383102d76, type: 3}
       propertyPath: m_Name
