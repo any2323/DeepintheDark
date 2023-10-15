@@ -34,6 +34,24 @@ public class ItemSound : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.transform.tag == "Box")
+        {
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+            {
+                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    source.Play();
+                }
+            }
+            else
+            {
+                source.Stop();
+            }
+        }
+    }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if(collision.collider.transform.tag == "Box")
