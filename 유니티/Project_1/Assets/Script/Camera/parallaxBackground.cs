@@ -70,12 +70,12 @@ public class parallex : MonoBehaviour
             if (backgrounds[i].GetComponent<BackGroundBool>().distanceY == false)
             {
                 mat[i].SetTextureOffset("_MainTex", new Vector2(distanceX, 0) * speed);
-                transform.position = new Vector3(cam.position.x, transform.position.y, 0);
+                transform.position = new Vector3(cam.position.x, transform.position.y, transform.position.z);
             }
             else
             {
                 mat[i].SetTextureOffset("_MainTex", new Vector2(distanceX, distanceY) * speed);
-                transform.position = new Vector3(cam.position.x, cam.position.y, 0);
+                transform.position = new Vector3(cam.position.x, cam.position.y, transform.position.z);
             }
         }
     }
