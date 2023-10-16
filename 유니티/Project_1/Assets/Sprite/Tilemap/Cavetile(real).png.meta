@@ -672,11 +672,11 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: 6}
-        - {x: 0, y: 6}
-        - {x: 8, y: 6}
-        - {x: 8, y: 8}
+      - - {x: -8, y: 7}
+        - {x: -8, y: 5}
+        - {x: 0, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: 7}
       tessellationDetail: 0
       bones: []
       spriteID: 137233130df0b2141a1558a0d210233f
