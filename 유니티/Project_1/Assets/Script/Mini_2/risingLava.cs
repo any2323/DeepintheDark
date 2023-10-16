@@ -12,7 +12,7 @@ public class risingLava : MonoBehaviour
         {
             return;
         }
-        transform.Translate(0, (0.0001f*Speed), 0);
+        transform.Translate(0, (0.001f*Speed), 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
