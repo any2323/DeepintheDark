@@ -13,6 +13,8 @@ public class parallex : MonoBehaviour
 
     GameObject[] backgrounds;
     Material[] mat;
+
+    [SerializeField]
     float[] backSpeed;
 
     float farthestBack;
