@@ -70,7 +70,7 @@ MonoBehaviour:
     value: {fileID: 0}
     defaultState: 1
   intensity:
-    overrideState: 1
+    overrideState: 0
     value: 0.207
   fastMode:
     overrideState: 1
@@ -110,13 +110,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 5.34
+    value: 5.3
   threshold:
-    overrideState: 0
-    value: 0.99
+    overrideState: 1
+    value: 0.95
   softKnee:
     overrideState: 0
-    value: 0.5
+    value: 0.52
   clamp:
     overrideState: 1
     value: 1487
@@ -124,8 +124,8 @@ MonoBehaviour:
     overrideState: 1
     value: 10
   anamorphicRatio:
-    overrideState: 1
-    value: -1
+    overrideState: 0
+    value: -0.15
   color:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -166,7 +166,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.261
+    value: 0.4
   smoothness:
     overrideState: 1
     value: 1
