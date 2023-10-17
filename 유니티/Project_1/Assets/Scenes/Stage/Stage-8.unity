@@ -633,7 +633,7 @@ MonoBehaviour:
   localWaypoints:
   - {x: 0, y: 0, z: 0}
   - {x: 29.95, y: 0, z: 0}
-  speed: 2
+  speed: 3
   cyclic: 0
   waitTime: 2
   easeAmount: 0

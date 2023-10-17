@@ -45023,7 +45023,7 @@ MonoBehaviour:
   - {x: 10.98, y: -29, z: 0}
   speed: 2.5
   cyclic: 0
-  waitTime: 4
+  waitTime: 3
   easeAmount: 0
 --- !u!61 &2140720744
 BoxCollider2D:
