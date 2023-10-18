@@ -7,6 +7,7 @@ public class Item : MonoBehaviour
     Player player;
     bool lava = false;
     Vector3 pos;
+    public GameObject Lava;
     GameObject Open;
     GameObject Close;
 
@@ -62,8 +63,8 @@ public class Item : MonoBehaviour
 
             if (lava && transform.name == "Item_Lava")
             {
-                risingLava LavaSpeed = GameObject.Find("Lava").GetComponent<risingLava>();
-                LavaSpeed.Speed += 1.5f;
+                risingLava LavaSpeed = Lava.GetComponent<risingLava>();
+                LavaSpeed.Speed += 1f;
                 Destroy(gameObject);
             }
 

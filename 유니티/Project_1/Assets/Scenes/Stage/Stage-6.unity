@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1954933766}
     m_Modifications:
+    - target: {fileID: 1477533558061955346, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
+      propertyPath: Lava
+      value: 
+      objectReference: {fileID: 1343160706}
     - target: {fileID: 5042128899859753444, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
       propertyPath: m_Name
       value: Item_Lava
@@ -488,6 +492,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1954933766}
     m_Modifications:
+    - target: {fileID: 1477533558061955346, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
+      propertyPath: Lava
+      value: 
+      objectReference: {fileID: 1343160706}
     - target: {fileID: 5042128899859753444, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
       propertyPath: m_Name
       value: Item_Lava
@@ -1033,6 +1041,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1954933766}
     m_Modifications:
+    - target: {fileID: 1477533558061955346, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
+      propertyPath: Lava
+      value: 
+      objectReference: {fileID: 1343160706}
     - target: {fileID: 5042128899859753444, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
       propertyPath: m_Name
       value: Item_Lava
@@ -1677,7 +1689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7487418692410317135, guid: 11f04950b2437644ba04e5d92b77d76e, type: 3}
       propertyPath: Speed
-      value: 0.15
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1702,6 +1714,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1954933766}
     m_Modifications:
+    - target: {fileID: 1477533558061955346, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
+      propertyPath: Lava
+      value: 
+      objectReference: {fileID: 1343160706}
     - target: {fileID: 5042128899859753444, guid: be1053e219f7c0f4292432d20d04a08c, type: 3}
       propertyPath: m_Name
       value: Item_Lava
