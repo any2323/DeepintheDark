@@ -905,6 +905,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6913344119371527584, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6937629928873315861, guid: bcbb2c0b80cd25a459d6beb5fc676446, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -3.0000153
@@ -1466,29 +1470,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4017319956054157140, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4635191938244795262, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4635191938244795262, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4635191938244795262, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4635191938244795262, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4635191938244795262, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4635191938244795262, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 5590530987245944390, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_UiScaleMode
@@ -1548,27 +1556,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7333903551554701160, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7333903551554701160, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7333903551554701160, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7333903551554701160, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7333903551554701160, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7333903551554701160, guid: 41fe9b7cfa7b71b46a0d1f04e057081b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26178,8 +26186,8 @@ MonoBehaviour:
       colorBlindnessType: 0
       colorBlindnessStrength: 1
   m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
+  m_ShowToolkit: 1
+  m_ShowCustomSorter: 1
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
