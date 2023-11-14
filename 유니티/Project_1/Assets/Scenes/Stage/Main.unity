@@ -187,7 +187,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<#c91313><size=40>\u25CB Company</color></size>\n GONGGAMMORE CONTENTS
     INC. (MYME)\n\n<#c91313><size=40>\u25CB Crew</color></size>\nDev : Kyle\t\t\t\tGD
-    + Pixel Art : Ember\nHand Art(main, end, etc) : AI\n\n<#c91313><size=40>\u25CB
+    + Pixel Art : Ember\nHand Art(main, end, etc) : colleague\n\n<#c91313><size=40>\u25CB
     Music</color></size>\n1. Comp. : 3xBlast\n(https://opengameart.org/content/happy-synths-loop-with-slight-christmas-feeling)\n2.
     Comp. : nyorunyouta (https://youtu.be/wWkzWn85bQg?si=lJQv7viRg6rkIRrJ)\n3. Comp.
     : nojisuma\n(https://pixabay.com/ko/music/the-last-drop-15684/)\n(https://pixabay.com/ko/music/the-last-drop-15684/)\n4.
@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: V1.0
+  m_text: V1.01
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 872e88596d217a742be232556ee31bd8, type: 2}
   m_sharedMaterial: {fileID: -4020567676656773057, guid: 872e88596d217a742be232556ee31bd8, type: 2}
@@ -4313,7 +4313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1751288397
 RectTransform:
   m_ObjectHideFlags: 0
