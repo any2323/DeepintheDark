@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 118
+  controlID: 126
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 28
+  controlID: 125
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -689,7 +689,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 04c2ffff4ec2ffffdac6ffff5acbffff0cceffffa6d0ffffa0d3ffffd0d6ffffc8d9ffffc0dbffff9edeffff94e1ffffe6e1ffffacf4ffff54f8ffffeefaffff906a0000566b0000
+      m_ExpandedIDs: 26d0ffff70d0fffffcd4ffff7cd9ffff2edcffffc8deffffc2e1fffff2e4ffffeae7ffffe2e9ffffc0ecffffb6efffff08f0ffffeefaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -754,7 +754,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 972
+  m_LastVerticalScrollValue: 810
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -821,9 +821,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac650000
-    m_LastClickedID: 26028
-    m_ExpandedIDs: 00000000526500009265000000ca9a3b
+    m_SelectedIDs: 68680000
+    m_LastClickedID: 26728
+    m_ExpandedIDs: 00000000426800006068000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -851,7 +851,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000052650000
+    m_ExpandedIDs: 0000000042680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1276,9 +1276,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9370564, y: -1.2971311, z: -2.31941}
+    m_Target: {x: 68.217964, y: 4.300008, z: -0.13114834}
     speed: 2
-    m_Value: {x: 1.9370564, y: -1.2971311, z: -2.31941}
+    m_Value: {x: 68.217964, y: 4.300008, z: -0.13114834}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1328,9 +1328,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 17.796755
+    m_Target: 13.954981
     speed: 2
-    m_Value: 17.796755
+    m_Value: 13.954981
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1394,7 +1394,7 @@ MonoBehaviour:
   m_SerializedViewValues:
   - "C:\\Users\\admin\\Desktop\\DeepintheDark\\\uC720\uB2C8\uD2F0\\Project_1\\Library\\PlayModeViewStates\\77b792a81dcc73446b2d2b42349c7099"
   m_PlayModeViewName: GameView
-  m_ShowGizmos: 1
+  m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 1920, y: 1080}
@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:

@@ -1406,6 +1406,10 @@ PrefabInstance:
       propertyPath: DoubleJump
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5180229714668757564, guid: e4c4dda3ba106064782736eb45a3fe1d, type: 3}
+      propertyPath: jumpHeight
+      value: 1.67
+      objectReference: {fileID: 0}
     - target: {fileID: 6343591998243683750, guid: e4c4dda3ba106064782736eb45a3fe1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.35
